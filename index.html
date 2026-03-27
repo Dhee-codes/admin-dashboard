@@ -1,210 +1,347 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Morgan Oakley Dashboard</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
-    <!-- Sidebar Navigation -->
-    <aside id="sidebar" class="sidebar">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <button
+      class="open-menu"
+      aria-controls="Main Navigation"
+      aria-expanded="false"
+    >
+      <img src="icons/menu.svg" alt="" aria-hidden="true" aria-label="Open menu" class="icon-menu" />
+    </button>
+
+    <div class="layout">
+      <!-- Sidebar Navigation -->
+      <aside id="sidebar" class="sidebar">
         <header class="sidebar-header">
-            <img src="logo.svg" alt="Dashboard Logo" width="40">
-            <h1>Dashboard</h1>
+          <img src="logo.svg" alt="Dashboard Logo" width="40" />
+          <h1>Dashboard</h1>
         </header>
 
         <nav aria-label="Main Navigation">
-            <ul>
-                <li><a href="#"><img src="icons/home.svg" alt="" aria-hidden="true"> Home</a></li>
-                <li><a href="#"><img src="icons/profile.svg" alt="" aria-hidden="true"> Profile</a></li>
-                <li><a href="#"><img src="icons/messages.svg" alt="" aria-hidden="true"> Messages</a></li>
-                <li><a href="#"><img src="icons/history.svg" alt="" aria-hidden="true"> History</a></li>
-                <li><a href="#"><img src="icons/tasks.svg" alt="" aria-hidden="true"> Tasks</a></li>
-                <li><a href="#"><img src="icons/communities.svg" alt="" aria-hidden="true"> Communities</a></li>
-            </ul>
+          <ul>
+            <li>
+              <a href="#"
+                ><img src="icons/home.svg" alt="" aria-hidden="true" /> Home</a
+              >
+            </li>
+            <li>
+              <a href="#"
+                ><img src="icons/profile.svg" alt="" aria-hidden="true" />
+                Profile</a
+              >
+            </li>
+            <li>
+              <a href="#"
+                ><img src="icons/messages.svg" alt="" aria-hidden="true" />
+                Messages</a
+              >
+            </li>
+            <li>
+              <a href="#"
+                ><img src="icons/history.svg" alt="" aria-hidden="true" />
+                History</a
+              >
+            </li>
+            <li>
+              <a href="#"
+                ><img src="icons/tasks.svg" alt="" aria-hidden="true" />
+                Tasks</a
+              >
+            </li>
+            <li>
+              <a href="#"
+                ><img src="icons/communities.svg" alt="" aria-hidden="true" />
+                Communities</a
+              >
+            </li>
+          </ul>
         </nav>
 
         <nav aria-label="Support Navigation">
-            <ul>
-                <li><a href="#"><img src="icons/settings.svg" alt="" aria-hidden="true"> Settings</a></li>
-                <li><a href="#"><img src="icons/support.svg" alt="" aria-hidden="true"> Support</a></li>
-                <li><a href="#"><img src="icons/privacy.svg" alt="" aria-hidden="true"> Privacy</a></li>
-            </ul>
+          <ul>
+            <li>
+              <a href="#"
+                ><img src="icons/settings.svg" alt="" aria-hidden="true" />
+                Settings</a
+              >
+            </li>
+            <li>
+              <a href="#"
+                ><img src="icons/support.svg" alt="" aria-hidden="true" />
+                Support</a
+              >
+            </li>
+            <li>
+              <a href="#"
+                ><img src="icons/privacy.svg" alt="" aria-hidden="true" />
+                Privacy</a
+              >
+            </li>
+          </ul>
         </nav>
-    </aside>
+      </aside>
 
-    <div class="content-wrapper">
+      <div class="content-wrapper">
         <!-- Main Header -->
         <header class="main-header">
-            <div class="header-top">
-                <form class="search-form" role="search">
-                    <label for="search-input"><img src="icons/search.svg" alt="Search icon" width="20"></label>
-                    <input type="search" id="search-input" name="q">
-                </form>
-                <div class="user-meta">
-                    <button type="button" aria-label="Notifications">
-                        <img src="icons/bell.svg" alt="" width="24">
-                    </button>
-                    <img src="icons/morgan-avatar.jpg" alt="Morgan Oakley profile" class="avatar-small">
-                    <span class="user-name">Morgan Oakley</span>
-                </div>
+          <div class="header-top">
+            <form class="search-form" role="search">
+              <label for="search-input"
+                ><img src="icons/search.svg" alt="Search icon" width="20"
+              /></label>
+              <input type="search" id="search-input" name="q" />
+            </form>
+            <div class="user-meta">
+              <button type="button" aria-label="Notifications">
+                <img src="icons/bell.svg" alt="" width="24" />
+              </button>
+              <img
+                src="icons/morgan-avatar.jpg"
+                alt="Morgan Oakley profile"
+                class="avatar-small"
+              />
+              <span class="user-name">Morgan Oakley</span>
             </div>
+          </div>
 
-            <div class="header-bottom">
-                <div class="welcome-block">
-                    <img src="icons/morgan-avatar.jpg" alt="" class="avatar-large">
-                    <div class="welcome-text">
-                        <p>Hi there,</p>
-                        <h2>Morgan Oakley (@morgan)</h2>
-                    </div>
-                </div>
-                <div class="header-actions">
-                    <button type="button">New</button>
-                    <button type="button">Upload</button>
-                    <button type="button">Share</button>
-                </div>
+          <div class="header-bottom">
+            <div class="welcome-block">
+              <img src="icons/morgan-avatar.jpg" alt="" class="avatar-large" />
+              <div class="welcome-text">
+                <p>Hi there,</p>
+                <h2>Morgan Oakley (@morgan)</h2>
+              </div>
             </div>
+            <div class="header-actions">
+              <button type="button">New</button>
+              <button type="button">Upload</button>
+              <button type="button">Share</button>
+            </div>
+          </div>
         </header>
 
         <!-- Main Dashboard Content -->
         <main class="dashboard-grid">
-            
-            <!-- Projects Section -->
-            <section class="projects-section">
-                <h3>Your Projects</h3>
-                <div class="projects-grid">
-                    <article class="project-card">
-                        <div class="card-accent"></div>
-                        <h4>Super Cool Project</h4>
-                        <p>Sed tempus ut lacus ut scelerisque. Suspendisse sollicitudin nibh ac neque hendrerit efficitur.</p>
-                        <div class="card-footer">
-                            <button aria-label="Star Project"><img src="icons/star.svg" alt=""></button>
-                            <button aria-label="Watch Project"><img src="icons/eye.svg" alt=""></button>
-                            <button aria-label="Fork Project"><img src="icons/fork.svg" alt=""></button>
-                        </div>
-                    </article>
-
-                    <article class="project-card">
-                        <div class="card-accent"></div>
-                        <h4>Less Cool Project</h4>
-                        <p>Nullam condimentum ipsum ut lectus varius consectetur. Quisque sed purus ac tellus placerat.</p>
-                        <div class="card-footer">
-                            <button aria-label="Star Project"><img src="icons/star.svg" alt=""></button>
-                            <button aria-label="Watch Project"><img src="icons/eye.svg" alt=""></button>
-                            <button aria-label="Fork Project"><img src="icons/fork.svg" alt=""></button>
-                        </div>
-                    </article>
-
-                    <article class="project-card">
-                        <div class="card-accent"></div>
-                        <h4>Impossible App</h4>
-                        <p>In hac habitasse platea dictumst. Vivamus dictum rutrum magna id accumsan.</p>
-                        <div class="card-footer">
-                            <button aria-label="Star Project"><img src="icons/star.svg" alt=""></button>
-                            <button aria-label="Watch Project"><img src="icons/eye.svg" alt=""></button>
-                            <button aria-label="Fork Project"><img src="icons/fork.svg" alt=""></button>
-                        </div>
-                    </article>
-
-                    <article class="project-card">
-                        <div class="card-accent"></div>
-                        <h4>Easy Peasy App</h4>
-                        <p>Etiam cursus eros ac eros pulvinar, ut porttitor magna accumsan. Mollis eu lectus a odio facilisis.</p>
-                        <div class="card-footer">
-                            <button aria-label="Star Project"><img src="icons/star.svg" alt=""></button>
-                            <button aria-label="Watch Project"><img src="icons/eye.svg" alt=""></button>
-                            <button aria-label="Fork Project"><img src="icons/fork.svg" alt=""></button>
-                        </div>
-                    </article>
-
-                    <article class="project-card">
-                        <div class="card-accent"></div>
-                        <h4>Ad Blocker</h4>
-                        <p>Curabitur convallis fringilla diam. Nullam nec magna id leo finibus convallis quis ac nisl.</p>
-                        <div class="card-footer">
-                            <button aria-label="Star Project"><img src="icons/star.svg" alt=""></button>
-                            <button aria-label="Watch Project"><img src="icons/eye.svg" alt=""></button>
-                            <button aria-label="Fork Project"><img src="icons/fork.svg" alt=""></button>
-                        </div>
-                    </article>
-
-                    <article class="project-card">
-                        <div class="card-accent"></div>
-                        <h4>Money Maker</h4>
-                        <p>Phasellus efficitur fringilla mi, sed congue nunc commodo ut. Nam scelerisque eu urna ut.</p>
-                        <div class="card-footer">
-                            <button aria-label="Star Project"><img src="icons/star.svg" alt=""></button>
-                            <button aria-label="Watch Project"><img src="icons/eye.svg" alt=""></button>
-                            <button aria-label="Fork Project"><img src="icons/fork.svg" alt=""></button>
-                        </div>
-                    </article>
+          <!-- Projects Section -->
+          <section class="projects-section">
+            <h3>Your Projects</h3>
+            <div class="projects-grid">
+              <article class="project-card">
+                <div class="card-accent"></div>
+                <h4>Super Cool Project</h4>
+                <p>
+                  Sed tempus ut lacus ut scelerisque. Suspendisse sollicitudin
+                  nibh ac neque hendrerit efficitur.
+                </p>
+                <div class="card-footer">
+                  <button aria-label="Star Project">
+                    <img src="icons/star.svg" alt="" />
+                  </button>
+                  <button aria-label="Watch Project">
+                    <img src="icons/eye.svg" alt="" />
+                  </button>
+                  <button aria-label="Fork Project">
+                    <img src="icons/fork.svg" alt="" />
+                  </button>
                 </div>
+              </article>
+
+              <article class="project-card">
+                <div class="card-accent"></div>
+                <h4>Less Cool Project</h4>
+                <p>
+                  Nullam condimentum ipsum ut lectus varius consectetur. Quisque
+                  sed purus ac tellus placerat.
+                </p>
+                <div class="card-footer">
+                  <button aria-label="Star Project">
+                    <img src="icons/star.svg" alt="" />
+                  </button>
+                  <button aria-label="Watch Project">
+                    <img src="icons/eye.svg" alt="" />
+                  </button>
+                  <button aria-label="Fork Project">
+                    <img src="icons/fork.svg" alt="" />
+                  </button>
+                </div>
+              </article>
+
+              <article class="project-card">
+                <div class="card-accent"></div>
+                <h4>Impossible App</h4>
+                <p>
+                  In hac habitasse platea dictumst. Vivamus dictum rutrum magna
+                  id accumsan.
+                </p>
+                <div class="card-footer">
+                  <button aria-label="Star Project">
+                    <img src="icons/star.svg" alt="" />
+                  </button>
+                  <button aria-label="Watch Project">
+                    <img src="icons/eye.svg" alt="" />
+                  </button>
+                  <button aria-label="Fork Project">
+                    <img src="icons/fork.svg" alt="" />
+                  </button>
+                </div>
+              </article>
+
+              <article class="project-card">
+                <div class="card-accent"></div>
+                <h4>Easy Peasy App</h4>
+                <p>
+                  Etiam cursus eros ac eros pulvinar, ut porttitor magna
+                  accumsan. Mollis eu lectus a odio facilisis.
+                </p>
+                <div class="card-footer">
+                  <button aria-label="Star Project">
+                    <img src="icons/star.svg" alt="" />
+                  </button>
+                  <button aria-label="Watch Project">
+                    <img src="icons/eye.svg" alt="" />
+                  </button>
+                  <button aria-label="Fork Project">
+                    <img src="icons/fork.svg" alt="" />
+                  </button>
+                </div>
+              </article>
+
+              <article class="project-card">
+                <div class="card-accent"></div>
+                <h4>Ad Blocker</h4>
+                <p>
+                  Curabitur convallis fringilla diam. Nullam nec magna id leo
+                  finibus convallis quis ac nisl.
+                </p>
+                <div class="card-footer">
+                  <button aria-label="Star Project">
+                    <img src="icons/star.svg" alt="" />
+                  </button>
+                  <button aria-label="Watch Project">
+                    <img src="icons/eye.svg" alt="" />
+                  </button>
+                  <button aria-label="Fork Project">
+                    <img src="icons/fork.svg" alt="" />
+                  </button>
+                </div>
+              </article>
+
+              <article class="project-card">
+                <div class="card-accent"></div>
+                <h4>Money Maker</h4>
+                <p>
+                  Phasellus efficitur fringilla mi, sed congue nunc commodo ut.
+                  Nam scelerisque eu urna ut.
+                </p>
+                <div class="card-footer">
+                  <button aria-label="Star Project">
+                    <img src="icons/star.svg" alt="" />
+                  </button>
+                  <button aria-label="Watch Project">
+                    <img src="icons/eye.svg" alt="" />
+                  </button>
+                  <button aria-label="Fork Project">
+                    <img src="icons/fork.svg" alt="" />
+                  </button>
+                </div>
+              </article>
+            </div>
+          </section>
+
+          <!-- Sidebar Content -->
+          <aside class="dashboard-sidebar">
+            <!-- Announcements -->
+            <section class="announcements">
+              <h3>Announcements</h3>
+              <div class="widget-card">
+                <article>
+                  <h5>Site Maintenance</h5>
+                  <p>
+                    Vestibulum condimentum tellus lacus, in accumsan elit
+                    maximus ac.
+                  </p>
+                </article>
+                <article>
+                  <h5>Community Share Day</h5>
+                  <p>
+                    Nam vel lectus tincidunt, rutrum nulla eu, ornare libero.
+                    Aliquam dictum.
+                  </p>
+                </article>
+                <article>
+                  <h5>Updated Privacy Policy</h5>
+                  <p>
+                    Phasellus efficitur fringilla mi, sed congue nunc commodo
+                    ut.
+                  </p>
+                </article>
+              </div>
             </section>
 
-            <!-- Sidebar Content -->
-            <aside class="dashboard-sidebar">
-                <!-- Announcements -->
-                <section class="announcements">
-                    <h3>Announcements</h3>
-                    <div class="widget-card">
-                        <article>
-                            <h5>Site Maintenance</h5>
-                            <p>Vestibulum condimentum tellus lacus, in accumsan elit maximus ac.</p>
-                        </article>
-                        <article>
-                            <h5>Community Share Day</h5>
-                            <p>Nam vel lectus tincidunt, rutrum nulla eu, ornare libero. Aliquam dictum.</p>
-                        </article>
-                        <article>
-                            <h5>Updated Privacy Policy</h5>
-                            <p>Phasellus efficitur fringilla mi, sed congue nunc commodo ut.</p>
-                        </article>
+            <!-- Trending Section -->
+            <section class="trending">
+              <h3>Trending</h3>
+              <div class="widget-card">
+                <ul class="trending-list">
+                  <li>
+                    <img
+                      src="icons/tegan-avatar.jpg"
+                      alt="Tegan profile picture"
+                    />
+                    <div class="trending-text">
+                      <span class="handle">@tegan</span>
+                      <span class="tagline">World Peace Builder</span>
                     </div>
-                </section>
-
-                <!-- Trending Section -->
-                <section class="trending">
-                    <h3>Trending</h3>
-                    <div class="widget-card">
-                        <ul class="trending-list">
-                            <li>
-                                <img src="icons/tegan-avatar.jpg" alt="Tegan profile picture">
-                                <div class="trending-text">
-                                    <span class="handle">@tegan</span>
-                                    <span class="tagline">World Peace Builder</span>
-                                </div>
-                            </li>
-                            <li>
-                                <img src="icons/morgan-avatar.jpg" alt="Morgan profile picture">
-                                <div class="trending-text">
-                                    <span class="handle">@morgan</span>
-                                    <span class="tagline">Super Cool Project</span>
-                                </div>
-                            </li>
-                            <li>
-                                <img src="icons/kendall-avatar.jpg" alt="Kendall profile picture">
-                                <div class="trending-text">
-                                    <span class="handle">@kendall</span>
-                                    <span class="tagline">Life Changing App</span>
-                                </div>
-                            </li>
-                            <li>
-                                <img src="icons/alex-avatar.jpg" alt="Alex profile picture">
-                                <div class="trending-text">
-                                    <span class="handle">@alex</span>
-                                    <span class="tagline">No Traffic Maker</span>
-                                </div>
-                            </li>
-                        </ul>
+                  </li>
+                  <li>
+                    <img
+                      src="icons/morgan-avatar.jpg"
+                      alt="Morgan profile picture"
+                    />
+                    <div class="trending-text">
+                      <span class="handle">@morgan</span>
+                      <span class="tagline">Super Cool Project</span>
                     </div>
-                </section>
-            </aside>
-
+                  </li>
+                  <li>
+                    <img
+                      src="icons/kendall-avatar.jpg"
+                      alt="Kendall profile picture"
+                    />
+                    <div class="trending-text">
+                      <span class="handle">@kendall</span>
+                      <span class="tagline">Life Changing App</span>
+                    </div>
+                  </li>
+                  <li>
+                    <img
+                      src="icons/alex-avatar.jpg"
+                      alt="Alex profile picture"
+                    />
+                    <div class="trending-text">
+                      <span class="handle">@alex</span>
+                      <span class="tagline">No Traffic Maker</span>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+            </section>
+          </aside>
         </main>
+      </div>
     </div>
-</body>
+  </body>
 </html>
