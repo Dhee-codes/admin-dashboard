@@ -86,7 +86,7 @@ h6 {
   font-family: "Roboto", sans-serif;
 }
 
-.open-menu {
+.menu-btn {
   display: none;
 }
 
@@ -104,7 +104,7 @@ h6 {
 }
 
 @media (max-width: 768px) {
-  .open-menu {
+  .menu-btn {
     display: block;
     width: 4rem;
     padding: 0.8rem;
@@ -113,12 +113,19 @@ h6 {
     border-radius: 8px;
   }
 
-  .open-menu img {
+  .menu-btn img {
     filter: brightness(0) invert(1);
   }
 
-  .open-menu:hover img {
+  .menu-btn:hover img {
     filter: brightness(1.2) invert(1);
+  }
+
+  .close {
+    position: absolute;
+    top: 2rem;
+    right: 1.5rem;
+    border: 2px solid var(--background);
   }
 
   .layout {
@@ -127,7 +134,7 @@ h6 {
 
   .sidebar {
     position: fixed;
-    width: 75%;
+    width: 80%;
     z-index: 50;
     transform: translateX(-100%);
     transition: transform 0.3s ease-out;

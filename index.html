@@ -17,6 +17,20 @@
     <div class="layout">
       <!-- Sidebar Navigation -->
       <aside id="sidebar" class="sidebar">
+        <button
+          id="close-menu"
+          class="menu-btn close"
+          aria-controls="Main Navigation"
+        >
+          <img
+            src="icons/close.svg"
+            alt=""
+            aria-hidden="true"
+            aria-label="Close menu"
+            class="icon-menu"
+          />
+        </button>
+
         <header class="sidebar-header">
           <img src="logo.svg" alt="Dashboard Logo" width="40" />
           <h1>Dashboard</h1>
@@ -91,7 +105,8 @@
         <header class="main-header">
           <div class="header-top">
             <button
-              class="open-menu"
+              id="open-menu"
+              class="menu-btn"
               aria-controls="Main Navigation"
               aria-expanded="false"
             >
