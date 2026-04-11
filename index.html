@@ -14,14 +14,6 @@
     <script src="script.js" defer></script>
   </head>
   <body>
-    <button
-      class="open-menu"
-      aria-controls="Main Navigation"
-      aria-expanded="false"
-    >
-      <img src="icons/menu.svg" alt="" aria-hidden="true" aria-label="Open menu" class="icon-menu" />
-    </button>
-
     <div class="layout">
       <!-- Sidebar Navigation -->
       <aside id="sidebar" class="sidebar">
@@ -98,6 +90,20 @@
         <!-- Main Header -->
         <header class="main-header">
           <div class="header-top">
+            <button
+              class="open-menu"
+              aria-controls="Main Navigation"
+              aria-expanded="false"
+            >
+              <img
+                src="icons/menu.svg"
+                alt=""
+                aria-hidden="true"
+                aria-label="Open menu"
+                class="icon-menu"
+              />
+            </button>
+
             <form class="search-form" role="search">
               <label for="search-input"
                 ><img src="icons/search.svg" alt="Search icon" width="20"
