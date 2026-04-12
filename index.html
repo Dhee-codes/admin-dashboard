@@ -121,18 +121,22 @@
 
             <form class="search-form" role="search">
               <label for="search-input"
-                ><img src="icons/search.svg" alt="Search icon" width="20"
+                ><img
+                  src="icons/search.svg"
+                  alt="Search icon"
+                  width="20"
+                  class="icon"
               /></label>
               <input type="search" id="search-input" name="q" />
             </form>
             <div class="user-meta">
               <button type="button" aria-label="Notifications">
-                <img src="icons/bell.svg" alt="" width="24" />
+                <img src="icons/bell.svg" alt="" width="20" class="icon" />
               </button>
               <img
-                src="icons/morgan-avatar.jpg"
+                src="images/avatar.png"
                 alt="Morgan Oakley profile"
-                class="avatar-small"
+                class="avatar avatar-small"
               />
               <span class="user-name">Morgan Oakley</span>
             </div>
@@ -140,16 +144,22 @@
 
           <div class="header-bottom">
             <div class="welcome-block">
-              <img src="icons/morgan-avatar.jpg" alt="" class="avatar-large" />
+              <img src="images/avatar.png" alt="" class="avatar avatar-large" />
               <div class="welcome-text">
                 <p>Hi there,</p>
                 <h2>Morgan Oakley (@morgan)</h2>
               </div>
             </div>
             <div class="header-actions">
-              <button type="button">New</button>
-              <button type="button">Upload</button>
-              <button type="button">Share</button>
+              <button type="button" aria-label="New" class="btn-primary">
+                <span aria-hidden="true">New</span><img src="icons/plus.svg" alt="" width="20" aria-hidden="true" />
+              </button>
+              <button type="button" aria-label="Upload" class="btn-primary">
+                <span aria-hidden="true">Upload</span><img src="icons/upload.svg" alt="" width="20" aria-hidden="true" />
+              </button>
+              <button type="button" aria-label="Share" class="btn-primary">
+                <span aria-hidden="true">Share</span><img src="icons/share.svg" alt="" width="20" aria-hidden="true" />
+              </button>
             </div>
           </div>
         </header>
